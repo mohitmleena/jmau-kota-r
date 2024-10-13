@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Website Example</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>3D Website Example</h1>
+        <nav class="sidebar">
+            <ul> 
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin.html">Admin Panel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="3d-container"></div>
+        <section id="student-results">
+            <h2>Student Results</h2>
+            <form id="result-form">
+                <label for="roll-number">Enter Roll Number:</label>
+                <input type="text" id="roll-number" name="roll-number" required>
+                <button type="submit">Show Result</button>
+            </form>
+            <div id="result-display"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

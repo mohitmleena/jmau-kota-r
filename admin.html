@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin.html">Admin Panel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="admin-login">
+            <h2>Admin Login</h2>
+            <form id="login-form">
+                <label for="admin-password">Enter Admin Password:</label>
+                <input type="password" id="admin-password" name="admin-password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="admin-panel" style="display: none;">
+            <h2>Add Student</h2>
+            <form id="admin-form">
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" name="student-name" required>
+                <label for="student-roll-number">Roll Number:</label>
+                <input type="text" id="student-roll-number" name="student-roll-number" required>
+                <label for="student-marks">Marks:</label>
+                <input type="text" id="student-marks" name="student-marks" required>
+                <button type="submit">Add Student</button>
+            </form>
+            <button id="export-btn">Export to Excel</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
